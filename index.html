@@ -31,16 +31,17 @@
         - 'shadow-xl': Adds a larger shadow for visual depth.
         - 'border-4 border-blue-500': Adds a border around the image.
 
-        NOTE: I've replaced your local image path with a placeholder URL.
-        You will need to upload your image to a public hosting service (like Imgur, Cloudinary,
-        or your web host) and use its direct URL here for it to display online.
-        Example placeholder image: https://placehold.co/600x400/007bff/ffffff?text=Your+Image+Here
+        IMPORTANT: Replace the 'src' value below with the direct, raw URL of your image from GitHub.
+        It will look something like:
+        "https://raw.githubusercontent.com/yourusername/your-repo-name/main/WhatsApp%20Image%202025-05-29%20at%2020.40.32_29e05308.jpg"
+
+        I've also updated the onerror to use a generic placeholder, as your local file won't work online.
     -->
     <img
-        src="https://placehold.co/800x1200/4F46E5/FFFFFF?text=Um+Saqer+Image"
-        alt="Um Saqer Placeholder Image"
+        src="WhatsApp Image 2025-05-29 at 20.40.32_29e05308.jpg"
+        alt="Um Saqer Image"
         class="w-full h-auto max-w-lg md:max-w-2xl rounded-lg shadow-xl border-4 border-blue-500"
-        onerror="this.onerror=null;this.src='WhatsApp Image 2025-05-29 at 20.40.32_29e05308.jpg';"
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/333333?text=Image+Not+Found';"
     >
 </body>
 </html>
