@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html>  
-    <head>  
-        <title> Um Saqer </title>
-    </head>
-    <body>  <h1> Khaleh Yshel Edu!! </h1>
-        <img src="WhatsApp Image 2025-05-29 at 20.40.32_29e05308.jpg"
-        height="1500">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Saqer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for the Inter font */
+        body {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+    <!--
+        The h1 tag is centered using Tailwind's 'text-center' class.
+        'text-3xl' makes the text larger, and 'font-bold' makes it bold.
+        'mb-8' adds margin-bottom for spacing below the title.
+    -->
+    <h1 class="text-center text-3xl md:text-5xl font-bold text-blue-700 mb-8 rounded-lg p-4 bg-white shadow-lg">
+        Khaleh Yshel Edu!!
+    </h1>
 
+    <!--
+        The image is made responsive using Tailwind classes:
+        - 'w-full': Makes the image take up 100% of its parent's width.
+        - 'h-auto': Maintains the image's aspect ratio.
+        - 'max-w-full': Ensures the image doesn't exceed its natural size if it's smaller than the container.
+        - 'rounded-lg': Adds rounded corners to the image.
+        - 'shadow-xl': Adds a larger shadow for visual depth.
+        - 'border-4 border-blue-500': Adds a border around the image.
 
+        NOTE: I've replaced your local image path with a placeholder URL.
+        You will need to upload your image to a public hosting service (like Imgur, Cloudinary,
+        or your web host) and use its direct URL here for it to display online.
+        Example placeholder image: https://placehold.co/600x400/007bff/ffffff?text=Your+Image+Here
+    -->
+    <img
+        src="https://placehold.co/800x1200/4F46E5/FFFFFF?text=Um+Saqer+Image"
+        alt="Um Saqer Placeholder Image"
+        class="w-full h-auto max-w-lg md:max-w-2xl rounded-lg shadow-xl border-4 border-blue-500"
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/333333?text=Image+Not+Found';"
+    >
 </body>
 </html>
